@@ -51,7 +51,7 @@ async def fetch_ticker_analytics(update: Update, context: ContextTypes.DEFAULT_T
         response = requests.get(url)
         response.raise_for_status()
         data = response.json()
-        await update.message.reply_text(f"Analytics Data:\n{data}")
+        await update.message.reply_text(f"{data}")
     except requests.exceptions.RequestException as e:
         await update.message.reply_text(f"Failed to fetch ticker analytics: {e}")
     except ValueError:
