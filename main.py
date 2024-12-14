@@ -46,7 +46,7 @@ async def get_ticker_analytics(update: Update, context: ContextTypes.DEFAULT_TYP
 # Handle the ticker name input and fetch analytics data
 async def fetch_ticker_analytics(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     ticker_name = update.message.text
-    url = f"{INVEST_API_URL}/info/analytics/{ticker_name}"
+    url = f"{INVEST_API_URL}/analytics/overview/{ticker_name}"
     try:
         response = requests.get(url)
         response.raise_for_status()
