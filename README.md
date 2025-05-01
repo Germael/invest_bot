@@ -5,7 +5,7 @@ It uses [investApp](https://github.com/Germael/investApp) as its backend to retr
 
 ## Features
 
-- 🔍 Search for S&P 500 companies by name or ticker
+- 🔍 Search for S&P 500 companies by ticker
 - 📊 Get key financial metrics and market data
 - 💬 Fast and interactive Telegram interface
 
